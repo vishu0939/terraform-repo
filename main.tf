@@ -15,3 +15,16 @@ resource "aws_instance" "myec2-tf" {
     Name = var.instance_name
   }
 }
+
+
+
+#step3: aws vpc
+
+resource "aws_vpc" "mymyvpc-tf" {
+  cidr_block           = var.vpc_cidr
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+  tags = {
+    Name = var.vpc_name
+  }
+}
