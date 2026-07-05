@@ -28,3 +28,6 @@ resource "aws_vpc" "mymyvpc-tf" {
     Name = var.vpc_name
   }
 }
+
+
+###
