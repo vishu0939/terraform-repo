@@ -1,3 +1,4 @@
+
 #Step 1: Tell Terraform which cloud to use 
 
 provider "aws" {
